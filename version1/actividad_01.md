@@ -2,7 +2,7 @@
 
 ## Pregunta inicial
 
-> ¿Cuál crees que es una mejor solución para una empresa "pyme": programar un sistema ERP personalizado desde cero o usar y modificar un sistema ERP genérico? ¿Y para una gran empresa?
+¿Cuál crees que es una mejor solución para una empresa "pyme": programar un sistema ERP personalizado desde cero o usar y modificar un sistema ERP genérico? ¿Y para una gran empresa?
 
 ## Respuesta
 
