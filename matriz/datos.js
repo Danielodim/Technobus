@@ -165,8 +165,7 @@ var DATOS = {
           bc: { f: ['F30'], t: '15 licencias Essentials (69,30 €) más 10 Team Member para jefes de obra (unos 6,93 €) suman 66.528 € en 5 años. Se añaden implantación de 40.000 € (punto medio del rango 20.000 a 60.000 €), vertical de obras (15.000 €, estimación), formación y soporte. Total estimado 145.528 €, 2,5 veces el más barato.' }
         },
         integracion: {
-          odoo: { f: ['F18'], t: 'El flujo CRM, presupuesto, proyecto, compra, stock y factura funciona sin conectores porque es una sola base de datos. Para programas externos hay API y módulos de terceros (por ejemplo importación BC3 desde Presto o Arquímedes); los conectores concretos pueden costar de 249 a 499 $.' },
-          holded: { f: ['F8'], t: 'API REST, webhooks y más de 200 integraciones, además de Zapier. Para conectar con programas de mediciones y presupuestos de obra (Presto, Arquímedes) no hemos encontrado una integración nativa, así que habría que desarrollarla.' },
+odoo: { f: ['F18'], t: 'El flujo CRM, presupuesto, proyecto, compra, stock y factura funciona sin conectores porque es una sola base de datos. Para presupuestos de obra existen módulos de terceros con importación BC3 (a validar con un partner su compatibilidad con Presto o Arquímedes). Hay API para otros programas.' },          holded: { f: ['F8'], t: 'API REST, webhooks y más de 200 integraciones, además de Zapier. Para conectar con programas de mediciones y presupuestos de obra (Presto, Arquímedes) no hemos encontrado una integración nativa, así que habría que desarrollarla.' },
           bc: { f: ['F38'], t: 'Gran ecosistema: Microsoft 365, Power BI y Power Platform, Excel y Word integrados, y verticales de obra que importan BC3 desde Presto o Arquímedes (Davisa), con app de jefe de obra y fotos geolocalizadas.' }
         },
         uso: {
