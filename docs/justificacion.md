@@ -1,9 +1,8 @@
 # Actividad evaluable 01: selección de un ERP
 
 **Asignatura:** Sistemas de Gestión Empresarial, UT1
-**Autor/a:** [nombre y apellidos]
-**Fecha de entrega:** 23 de noviembre de 2026
-**Matriz programable:** carpeta `matriz/` (abrir `matriz/index.html` en el navegador)
+**Autor/a:** Melisa Vafaeva
+**Fecha de entrega:** 21 de noviembre de 2026
 
 ## 1. Planteamiento
 
