@@ -1,0 +1,148 @@
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  color: #1f2933;
+  background: #f4f6f8;
+  line-height: 1.5;
+}
+
+.cabecera {
+  background: #1e3a5f;
+  color: #ffffff;
+  padding: 24px 32px;
+}
+.cabecera h1 { margin: 0 0 6px 0; font-size: 1.6rem; }
+.cabecera p { margin: 0; opacity: 0.9; }
+
+.pestanas {
+  display: flex;
+  gap: 8px;
+  padding: 16px 32px 0 32px;
+  flex-wrap: wrap;
+}
+.pestanas button {
+  border: 1px solid #c3ccd6;
+  border-bottom: none;
+  background: #e6ebf0;
+  padding: 10px 18px;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 8px 8px 0 0;
+  color: #1f2933;
+}
+.pestanas button.activa {
+  background: #ffffff;
+  font-weight: 600;
+  color: #1e3a5f;
+}
+
+main { padding: 0 32px 16px 32px; }
+
+.bloque {
+  background: #ffffff;
+  border: 1px solid #d5dce3;
+  border-radius: 0 8px 8px 8px;
+  padding: 20px 24px;
+  margin: 0 32px 20px 32px;
+}
+main .bloque { margin: 0 0 20px 0; }
+.bloque h2 { margin-top: 0; font-size: 1.25rem; color: #1e3a5f; }
+.bloque h3 { font-size: 1.05rem; margin: 18px 0 8px 0; }
+
+.aviso { color: #52606d; font-size: 0.92rem; }
+.error { color: #b42318; font-weight: 600; }
+.ok { color: #1a7f37; font-weight: 600; }
+
+.contenedor-tabla { overflow-x: auto; }
+
+table.matriz, table.tco {
+  border-collapse: collapse;
+  width: 100%;
+  min-width: 720px;
+}
+table.matriz th, table.matriz td,
+table.tco th, table.tco td {
+  border: 1px solid #d5dce3;
+  padding: 8px 10px;
+  text-align: left;
+  vertical-align: middle;
+}
+table.matriz thead th, table.tco thead th {
+  background: #eef2f6;
+}
+table.matriz td.centro, table.matriz th.centro,
+table.tco td.centro, table.tco th.centro { text-align: center; }
+table.tco td.derecha, table.tco th.derecha { text-align: right; }
+
+.detalle-criterio { display: block; font-size: 0.82rem; color: #52606d; }
+
+input[type="number"] {
+  width: 76px;
+  padding: 5px 6px;
+  font-size: 0.95rem;
+  border: 1px solid #b5c0cc;
+  border-radius: 4px;
+  text-align: right;
+}
+select {
+  padding: 5px 6px;
+  font-size: 0.95rem;
+  border: 1px solid #b5c0cc;
+  border-radius: 4px;
+  background: #ffffff;
+}
+.puntos { display: block; font-size: 0.82rem; color: #52606d; margin-top: 3px; }
+
+tr.fila-total td, tr.fila-total th { background: #eef2f6; font-weight: 700; font-size: 1.05rem; }
+td.ganador, th.ganador { background: #e3f4e8 !important; }
+tr.fila-pesos td, tr.fila-pesos th { background: #fafbfc; }
+
+.acciones { display: flex; gap: 10px; flex-wrap: wrap; margin: 12px 0 0 0; }
+button.boton {
+  border: 1px solid #1e3a5f;
+  background: #ffffff;
+  color: #1e3a5f;
+  padding: 7px 14px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 0.95rem;
+}
+button.boton:hover { background: #eef2f6; }
+button.principal { background: #1e3a5f; color: #ffffff; }
+button.principal:hover { background: #2b4f7e; }
+
+.resultado { margin-top: 16px; }
+.barra-fila { display: flex; align-items: center; gap: 12px; margin: 8px 0; }
+.barra-nombre { width: 240px; font-size: 0.95rem; }
+.barra-pista { flex: 1; background: #e6ebf0; border-radius: 6px; height: 24px; overflow: hidden; }
+.barra-valor { height: 100%; background: #5b8bc4; border-radius: 6px; }
+.barra-valor.mejor { background: #2e9e5b; }
+.barra-numero { width: 90px; font-weight: 700; text-align: right; }
+
+details { margin: 8px 0; border: 1px solid #d5dce3; border-radius: 6px; padding: 8px 12px; background: #fcfdfd; }
+details summary { cursor: pointer; font-weight: 600; }
+details table { margin-top: 10px; }
+
+.rejilla-usuarios { display: flex; gap: 20px; flex-wrap: wrap; margin-bottom: 8px; }
+.rejilla-usuarios label { font-size: 0.95rem; }
+
+.nota-erp { margin: 8px 0 12px 0; }
+.nota-erp strong { color: #1e3a5f; }
+.etiqueta-nota { display: inline-block; background: #1e3a5f; color: #ffffff; border-radius: 10px; padding: 0 8px; font-size: 0.8rem; margin-left: 6px; }
+.fuentes-enlace a { color: #1e5aa8; }
+
+.lista-fuentes { padding-left: 24px; }
+.lista-fuentes li { margin: 4px 0; font-size: 0.92rem; }
+.lista-fuentes a { color: #1e5aa8; word-break: break-all; }
+
+.leyenda { display: grid; grid-template-columns: repeat(auto-fit, minmax(210px, 1fr)); gap: 8px; margin: 10px 0; }
+.leyenda div { border: 1px solid #d5dce3; border-radius: 6px; padding: 8px 10px; background: #fafbfc; font-size: 0.9rem; }
+
+.pie { padding: 4px 32px 28px 32px; color: #52606d; font-size: 0.9rem; }
+
+@media print {
+  .pestanas, .acciones { display: none; }
+  body { background: #ffffff; }
+}
